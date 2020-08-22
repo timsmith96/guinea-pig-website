@@ -1,0 +1,133 @@
+@media(max-width: 768px) {
+  /* Navigation */
+
+  body {
+    background: #333;
+  }
+  
+  #main-nav {
+    height: 140px;
+    padding: 10px;
+    width: 100%;
+
+  }
+  
+  #main-nav .navbar {
+    flex-direction: column;
+    width: 100%;
+    
+
+
+  }
+
+  #main-nav h1 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+
+  #main-nav ul li a {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+
+  /* Showcase */
+  #showcase .container .content h1 {
+    margin-top: 50px;
+    font-size: 35px;
+    padding: 25px;
+  }
+
+  #showcase .container .content p {
+    font-size: 25px;
+  }
+
+  /* Flex */
+  .flex-row {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    } 
+
+    #welcome .welcome-content {
+      margin-top: 0px;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .flex-column h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+
+  .flex-column p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+  .btn {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  /* Icons */
+  #icons {
+    background: #67D44E;
+    height: 300px;
+  }
+
+  #icons .flex-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-top: 0px;
+    /* border: 2px solid red; */
+    padding: 0px;
+    height:100%;
+  }
+
+  #icons h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    padding: 20px;
+    /* border: 2px solid blue; */
+  }
+
+  #icons .icon {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /* Footer */
+  #main-footer {
+    background: #333;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  #main-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  }
+  
+
+
