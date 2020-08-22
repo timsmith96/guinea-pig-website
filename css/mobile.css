@@ -91,10 +91,8 @@
 
   #icons .flex-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     margin-top: 0px;
-    /* border: 2px solid red; */
     padding: 0px;
     height:100%;
   }
@@ -104,7 +102,6 @@
     font-size: 20px;
     padding: 0px;
     padding: 20px;
-    /* border: 2px solid blue; */
   }
 
   #icons .icon {
@@ -130,7 +127,22 @@
     align-items: flex-end;
     height: 100%;
   }
-  
+
+  /* Gallery */
+  #index-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p"
+    "gallery-h2 gallery-h2"
+    "img1 img2"
+    "img3 img4"
+    "img5 img6"
+    "img7 img8";  
+  }
+
   }
   
 
