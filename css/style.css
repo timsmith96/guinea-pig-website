@@ -182,17 +182,12 @@ img {
   justify-content: center;
 }
 
-#showcase .container .content {
-  margin-bottom: 80px;
+#showcase .container h1 {
+  font-size: 70px;
 }
 
-#showcase .container .content h1 {
-  font-size: 90px;
-}
-
-#showcase .container .content p {
-  font-size: 40px;
-  margin-bottom: 40px;
+#showcase .container p {
+  font-size: 35px;
 }
 
 
@@ -213,27 +208,30 @@ img {
 /* Icons */
 #icons {
   background: #67D44E;
-  height: 350px;
+  height: 40vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #icons .flex-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   height: 100%;
-  margin-top: 50px;
-
 }
 
 #icons .icon {
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
+  padding: 5px;
 }
 
 
 #icons h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 20px;
 }
 
