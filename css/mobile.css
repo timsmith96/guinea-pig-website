@@ -3,7 +3,7 @@
 
 
   #main-nav {
-    height: 140px;
+    height: 160px;
     padding: 10px;
     width: 100%;
 
@@ -118,12 +118,32 @@
     grid-template-rows: auto;
     grid-gap: 10px;
     grid-template-areas: 
-    "gallery-p gallery-p"
-    "gallery-h2 gallery-h2"
-    "img1 img2"
-    "img3 img4"
-    "img5 img6"
-    "img7 img8";  
+    "gallery-p"
+    "gallery-h2"
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8"
+    "img9"
+    "img10"
+    "img11"
+    "img12"
+    "img13"
+    "img14"
+    "img15"
+    "img16"
+    "img17"
+    "img18"
+    "img19"
+    "img20";
+  }
+
+  #index-gallery h2 {
+    margin-bottom: 5px;
   }
 
   /* About */
@@ -153,13 +173,10 @@
    }
 
    .img-window img {
-    max-height: 80vh;
-    max-width: 600px;
+    height: 70vh;
+    width: 300px;
     object-fit: cover;
   }
 
 
-  }
-  
-
-
+}
