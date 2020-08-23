@@ -40,8 +40,12 @@
     padding: 20px;   
   }
 
+  #showcase .container h1 {
+    font-size: 60px;
+  }
+
   #showcase .container p {
-    font-size: 22px;
+    font-size: 35px;
   }
 
   /* Flex */
