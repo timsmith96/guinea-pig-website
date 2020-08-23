@@ -8,9 +8,9 @@ if(galleryImages) {
       let getElementCss = window.getComputedStyle(image);
       let getFullImageUrl = getElementCss.getPropertyValue("background-image");
       let getImgUrlPos = getFullImageUrl.split("/gallery/thumbs/");
-      let setNewImgUrl = getImgUrlPos[1].replace('.png")', '.jpg');
-      
+      let setNewImgUrl = getImgUrlPos[1].replace('")', '');
       getLatestOpenedImg = index + 1;
+      
 
       let container = document.body;
       let newImgWindow = document.createElement("div");

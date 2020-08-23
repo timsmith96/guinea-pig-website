@@ -1,10 +1,7 @@
 @media(max-width: 768px) {
   /* Navigation */
 
-  body {
-    background: #333;
-  }
-  
+
   #main-nav {
     height: 140px;
     padding: 10px;
@@ -114,20 +111,6 @@
     border-bottom: 1px solid white;
   }
 
-  /* Footer */
-  #main-footer {
-    background: #333;
-    height: 40px;
-    font-size: 15px;
-  }
-  
-  #main-footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
-  }
-
   /* Gallery */
   #index-gallery {
     display: grid;
@@ -142,6 +125,39 @@
     "img5 img6"
     "img7 img8";  
   }
+
+  /* About */
+  #profiles .profiles-container {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  #profiles img {
+    width: 100%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }
+
+   footer p {
+     font-size: 20px;
+     padding: 20px;
+     text-align: center;
+   }
+
+   .img-window img {
+    max-height: 80vh;
+    max-width: 600px;
+    object-fit: cover;
+  }
+
 
   }
   
