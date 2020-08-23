@@ -12,9 +12,6 @@
   #main-nav .navbar {
     flex-direction: column;
     width: 100%;
-    
-
-
   }
 
   #main-nav h1 {
@@ -35,15 +32,21 @@
 
 
   /* Showcase */
+  #showcase .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   #showcase .container .content h1 {
-    margin-top: 50px;
     font-size: 35px;
     padding: 25px;
   }
 
   #showcase .container .content p {
     font-size: 25px;
-  }
+  } */
 
   /* Flex */
   .flex-row {
@@ -182,7 +185,7 @@
 
 
 }
-
+/* 
 @media(max-height: 400px) {
   #main-nav {
     height: 180px;
@@ -211,5 +214,4 @@
     font-size: 1.3rem;
     color: #fff;
     padding-bottom: 10px;
-  }
-} 
+  } */
