@@ -23,26 +23,26 @@ if(galleryImages) {
       newImg.setAttribute("src", "img/gallery/" + setNewImgUrl);
       newImg.setAttribute("id", "current-img");
 
-      newImg.onload = function() {
-        let imgWidth = this.width;
-        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+      // newImg.onload = function() {
+      //   let imgWidth = this.width;
+      //   let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
 
-        let newNextBtn = document.createElement("a");
-        let btnNextText = document.createTextNode(">");
-        newNextBtn.appendChild(btnNextText);
-        container.appendChild(newNextBtn);
-        // newNextBtn.setAttribute("class", "img-btn-next");
-        newNextBtn.setAttribute("onclick", "changeImg(1)");
-        newNextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
+      //   let newNextBtn = document.createElement("a");
+      //   let btnNextText = document.createTextNode(">");
+      //   newNextBtn.appendChild(btnNextText);
+      //   container.appendChild(newNextBtn);
+      //   // newNextBtn.setAttribute("class", "img-btn-next");
+      //   newNextBtn.setAttribute("onclick", "changeImg(1)");
+      //   newNextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
   
-        let newPrevBtn = document.createElement("a");
-        let btnPrevText = document.createTextNode("<");
-        newPrevBtn.appendChild(btnPrevText);
-        container.appendChild(newPrevBtn);
-        // newPrevBtn.setAttribute("class", "img-btn-prev");
-        newPrevBtn.setAttribute("onclick", "changeImg(0)");
-        newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-      }
+      //   let newPrevBtn = document.createElement("a");
+      //   let btnPrevText = document.createTextNode("<");
+      //   newPrevBtn.appendChild(btnPrevText);
+      //   container.appendChild(newPrevBtn);
+      //   // newPrevBtn.setAttribute("class", "img-btn-prev");
+      //   newPrevBtn.setAttribute("onclick", "changeImg(0)");
+      //   newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
+      // }
     }  
   });
 }
