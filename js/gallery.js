@@ -12,6 +12,7 @@ if(galleryImages) {
       getLatestOpenedImg = index + 1;
 
 
+
       
 
       let container = document.body;
