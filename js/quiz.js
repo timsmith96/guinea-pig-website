@@ -36,7 +36,7 @@ document.querySelector('#reset').addEventListener('click', clearAll);
 form.addEventListener('submit', function (e) {
   document.querySelector('#loading').style.display = 'block';
 
-  setTimeout(calcResults, 1000);
+  setTimeout(calcResults, 2000);
 
   e.preventDefault();
 });
