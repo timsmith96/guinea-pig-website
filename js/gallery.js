@@ -10,6 +10,8 @@ if(galleryImages) {
       let getImgUrlPos = getFullImageUrl.split("/gallery/thumbs/");
       let setNewImgUrl = getImgUrlPos[1].replace('")', '');
       getLatestOpenedImg = index + 1;
+
+
       
 
       let container = document.body;
