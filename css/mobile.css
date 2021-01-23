@@ -1,14 +1,12 @@
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   /* Navigation */
-
 
   #main-nav {
     height: 160px;
     padding: 10px;
     width: 100%;
-
   }
-  
+
   #main-nav .navbar {
     flex-direction: column;
     width: 100%;
@@ -21,7 +19,6 @@
     text-align: center;
   }
 
-
   #main-nav ul li a {
     margin-right: 10px;
     font-size: 1.3rem;
@@ -29,15 +26,13 @@
     padding-bottom: 10px;
   }
 
-
-
   /* Showcase */
   #showcase .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;   
+    padding: 20px;
   }
 
   #showcase .container h1 {
@@ -61,23 +56,23 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    } 
+  }
 
-    #welcome .welcome-content {
-      margin-top: 0px;
-      text-align: center;
-      padding: 50px;
-    }
+  #welcome .welcome-content {
+    margin-top: 0px;
+    text-align: center;
+    padding: 50px;
+  }
 
-    .flex-column h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
+  .flex-column h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .flex-column p {
     font-size: 20px;
     margin-bottom: 40px;
-}
+  }
 
   .btn {
     padding: 10px;
@@ -87,7 +82,7 @@
 
   /* Icons */
   #icons {
-    background: #67D44E;
+    background: #67d44e;
     height: 300px;
   }
 
@@ -96,7 +91,7 @@
     justify-content: space-between;
     margin-top: 0px;
     padding: 0px;
-    height:100%;
+    height: 100%;
   }
 
   #icons h2 {
@@ -122,29 +117,29 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
-    grid-template-areas: 
-    "gallery-p"
-    "gallery-h2"
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "img5"
-    "img6"
-    "img7"
-    "img8"
-    "img9"
-    "img10"
-    "img11"
-    "img12"
-    "img13"
-    "img14"
-    "img15"
-    "img16"
-    "img17"
-    "img18"
-    "img19"
-    "img20";
+    grid-template-areas:
+      'gallery-p'
+      'gallery-h2'
+      'img1'
+      'img2'
+      'img3'
+      'img4'
+      'img5'
+      'img6'
+      'img7'
+      'img8'
+      'img9'
+      'img10'
+      'img11'
+      'img12'
+      'img13'
+      'img14'
+      'img15'
+      'img16'
+      'img17'
+      'img18'
+      'img19'
+      'img20';
   }
 
   #index-gallery h2 {
@@ -169,21 +164,19 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-   }
+  }
 
-   footer p {
-     font-size: 15px;
-     padding: 20px;
-     text-align: center;
-   }
+  footer p {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+  }
 
-   .img-window img {
+  .img-window img {
     height: 70vh;
     width: 300px;
     object-fit: cover;
   }
-
-
 }
 /* 
 @media(max-height: 400px) {
