@@ -29,9 +29,17 @@ for (let i = 0; i < girls.length; i++) {
       // Checking if the two tiles flipped over are the same
       if (tilesFlipped[0].classList[1] === tilesFlipped[1].classList[1]) {
         console.log('match!');
+        // If they are, add them to an array called correctTiles
         correctTiles.push(tilesFlipped[0]);
         correctTiles.push(tilesFlipped[1]);
+        // And give the correct tiles a bright green border
+        for(correctTile of correctTiles){
+          correctTile.style.border = "3px solid #66ff00"
+        }
       } else {
+        for(tileFlipped of tilesFlipped){
+          tileFlipped.style.border = "3px solid red"
+        }
         console.log('no match!');
         setTimeout(resetTiles, 1000);
       }
@@ -48,12 +56,15 @@ function resetTiles() {
       // Don't do anything
       console.log('do nothing');
     } else {
-      // If the current tile has the bacgkround image class of the girls showing...
-      if (tiles[i].classList.toggle(`${girls[i]}`)) {
-        // Toggle that class off to hide the background image of the girls
+      // If the current tile has the bacgkround image class of the girls showing and isn't in the correct list...
+      if (tiles[i].classList.contains(`${girls[i]}`)) {
+        // Toggle that class off to hide the background image of the girls        
+        tiles[i].style.border = "none"
         tiles[i].classList.toggle(`${girls[i]}`);
+        
       }
     }
   }
 }
+
 
