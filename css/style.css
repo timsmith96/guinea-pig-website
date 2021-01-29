@@ -559,23 +559,37 @@ footer {
   width: 250px;
 }
 
+.hide-tile {
+  height: 250px;
+  width: 250px;
+  background-color: black;
+}
 
-#beans {
+
+.beans {
   background-image: url('/img/beans_game.png');
-  background-repeat:no-repeat;
+  transition: 2s ease-in all;
 }
 
-#dooda {
+.dooda {
   background-image: url('/img/dooda_game.png');
-  background-repeat:no-repeat;
 }
 
-/* .hide-pig {
-  background-color: blue;
-} */
+.pingu {
+  background-image: url('/img/pingu_game.png')
+}
 
+.allthree {
+  background-image: url('/img/all_three_game.png')
+}
 
+.beans2 {
+  background-image: url('/img/beans_game_2.png');
+}
 
+.dooda2 {
+  background-image: url('/img/dooda_game_2.png');
+}
 
 .modal-text {
   color: black;
