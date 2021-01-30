@@ -559,10 +559,9 @@ footer {
   width: 250px;
 }
 
-.hide-tile {
-  height: 250px;
-  width: 250px;
-  background-color: black;
+.paw-tile {
+  background-image: url('/img/game-paw-tile.png');
+  border: 2px solid black;
 }
 
 

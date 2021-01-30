@@ -16,7 +16,6 @@ const girls = [
   'dooda2',
 ];
 
-
 // Looping through all tiles
 for (let i = 0; i < girls.length; i++) {
   tiles[i].addEventListener('click', function () {
@@ -33,12 +32,12 @@ for (let i = 0; i < girls.length; i++) {
         correctTiles.push(tilesFlipped[0]);
         correctTiles.push(tilesFlipped[1]);
         // And give the correct tiles a bright green border
-        for(correctTile of correctTiles){
-          correctTile.style.border = "3px solid #66ff00"
+        for (correctTile of correctTiles) {
+          correctTile.style.border = '3px solid #66ff00';
         }
       } else {
-        for(tileFlipped of tilesFlipped){
-          tileFlipped.style.border = "3px solid red"
+        for (tileFlipped of tilesFlipped) {
+          tileFlipped.style.border = '3px solid red';
         }
         console.log('no match!');
         setTimeout(resetTiles, 1000);
@@ -58,13 +57,11 @@ function resetTiles() {
     } else {
       // If the current tile has the bacgkround image class of the girls showing and isn't in the correct list...
       if (tiles[i].classList.contains(`${girls[i]}`)) {
-        // Toggle that class off to hide the background image of the girls        
-        tiles[i].style.border = "none"
+        // Toggle that class off to hide the background image of the girls
+        tiles[i].style.border = 'none';
         tiles[i].classList.toggle(`${girls[i]}`);
-        
       }
     }
   }
 }
-
 
