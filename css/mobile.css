@@ -208,3 +208,42 @@
     color: #fff;
     padding-bottom: 10px;
   } */
+
+
+  @media (max-width: 700px) {
+    .tile {
+      height: 100px;
+      width: 100px;
+    }
+    
+    .paw-tile {
+      background-image: url('/img/paw-tile-small.png');
+      border: 2px solid black;
+    }
+    
+    
+    .beans {
+      background-image: url('/img/beans_game_small.png');
+    }
+    
+    .dooda {
+      background-image: url('/img/dooda_game_small.png');
+    }
+    
+    .pingu {
+      background-image: url('/img/pingu_game_small.png')
+    }
+    
+    .allthree {
+      background-image: url('/img/all_three_game_small.png')
+    }
+    
+    .beans2 {
+      background-image: url('/img/beans2_game_small.png');
+    }
+    
+    .dooda2 {
+      background-image: url('/img/dooda2_game_small.png');
+    }
+  
+  }

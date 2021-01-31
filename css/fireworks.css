@@ -56,3 +56,9 @@ canvas:active {
   right: 0;
   opacity: 0;
 }
+
+@media (max-width: 700px) {
+  .letters {
+    font-size:40px;
+  }
+}
