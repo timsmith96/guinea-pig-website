@@ -136,5 +136,5 @@ function pauseSqueakers(){
 }
 
 function toFireworks() {
-  window.location.replace("http://127.0.0.1:5500/fireworks.html")
+  window.location.replace("http://www.theguineagirls.com/fireworks.html")
 }
