@@ -64,7 +64,7 @@ for (let i = 0; i < tiles.length; i++) {
         for (correctTile of correctTiles) {
           correctTile.style.border = '3px solid #66ff00';
         }
-        setTimeout(resetTilesCorrect, 1200);
+        setTimeout(resetTilesCorrect, 1000);
         // if they are not the same
       } else {
         // disable all tiles
