@@ -16,6 +16,8 @@ const girls = [
   'dooda2',
 ];
 
+
+
 // Looping through all tiles
 for (let i = 0; i < girls.length; i++) {
   tiles[i].addEventListener('click', function () {
