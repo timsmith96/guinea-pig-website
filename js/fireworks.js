@@ -1,5 +1,5 @@
 
-setTimeout(backToGame, 27000);
+setTimeout(backToGame, 13000);
 
 (
   (function ($) {

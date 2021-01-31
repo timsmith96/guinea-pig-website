@@ -64,7 +64,7 @@ for (let i = 0; i < tiles.length; i++) {
         for (correctTile of correctTiles) {
           correctTile.style.border = '3px solid #66ff00';
         }
-        setTimeout(resetTilesCorrect, 800);
+        setTimeout(resetTilesCorrect, 1200);
         // if they are not the same
       } else {
         // disable all tiles
@@ -73,7 +73,7 @@ for (let i = 0; i < tiles.length; i++) {
           // add a red border
           tileFlipped.style.border = '3px solid red';
         }
-        setTimeout(resetTilesIncorrect, 800);
+        setTimeout(resetTilesIncorrect, 1200);
       }
       tilesFlipped = [];
     }
