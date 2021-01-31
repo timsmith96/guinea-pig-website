@@ -588,3 +588,4 @@ function pauseSqueakers() {
 function backToGame() {
   window.location.replace("http://www.theguineagirls.com/game2.html")
 }
+
