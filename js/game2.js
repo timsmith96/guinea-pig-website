@@ -78,7 +78,7 @@ for (let i = 0; i < tiles.length; i++) {
       tilesFlipped = [];
     }
     if (correctTiles.length === 12) {
-      console.log("my squeaker")
+      setTimeout(toFireworks, 5000)
       playWinningSqueak(squeakerOne)
       setTimeout(playWinningSqueak, 500, squeakerTwo)
       setTimeout(playWinningSqueak, 1000, squeakerThree)
@@ -133,4 +133,8 @@ function playWinningSqueak(squeaker) {
 function pauseSqueakers(){
   for (let squeaker of manySqueakers)
   squeaker.pause()
+}
+
+function toFireworks() {
+  window.location.replace("http://127.0.0.1:5500/fireworks.html")
 }
