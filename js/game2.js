@@ -15,9 +15,16 @@ const squeakerThree = document.querySelector('#squeaker-three');
 const squeakerFour = document.querySelector('#squeaker-four');
 const squeakerFive = document.querySelector('#squeaker-five');
 
-const manySqueakers = [squeakerOne, squeakerTwo, squeakerThree, squeakerThree, squeakerFour, squeakerFive]
+const manySqueakers = [
+  squeakerOne,
+  squeakerTwo,
+  squeakerThree,
+  squeakerThree,
+  squeakerFour,
+  squeakerFive,
+];
 
-console.log(squeakerOne)
+console.log(squeakerOne);
 
 const classes = [
   'beans',
@@ -44,7 +51,7 @@ for (let i = 0; i < tiles.length; i++) {
   // add click event listener
   tiles[i].addEventListener('click', function () {
     // turn on the class (randomised now) to show the guinea pig
-    
+
     tiles[i].classList.toggle(`${classes[i]}`);
     tiles[i].style.pointerEvents = 'none';
     tiles[i].closest('.paw-tile').style.cursor = 'auto';
@@ -78,13 +85,13 @@ for (let i = 0; i < tiles.length; i++) {
       tilesFlipped = [];
     }
     if (correctTiles.length === 12) {
-      setTimeout(toFireworks, 5000)
-      playWinningSqueak(squeakerOne)
-      setTimeout(playWinningSqueak, 500, squeakerTwo)
-      setTimeout(playWinningSqueak, 1000, squeakerThree)
-      setTimeout(playWinningSqueak, 1500, squeakerFour)
-      setTimeout(playWinningSqueak, 2000, squeakerFive)
-      setTimeout(pauseSqueakers, 5000)
+      setTimeout(toFireworks, 5000);
+      playWinningSqueak(squeakerOne);
+      setTimeout(playWinningSqueak, 500, squeakerTwo);
+      setTimeout(playWinningSqueak, 1000, squeakerThree);
+      setTimeout(playWinningSqueak, 1500, squeakerFour);
+      setTimeout(playWinningSqueak, 2000, squeakerFive);
+      setTimeout(pauseSqueakers, 5000);
     }
   });
 }
@@ -127,14 +134,30 @@ function turnOffAllClick(tiles) {
 
 function playWinningSqueak(squeaker) {
   squeaker.loop = 'true';
-  squeaker.play()
+  squeaker.play();
 }
 
-function pauseSqueakers(){
-  for (let squeaker of manySqueakers)
-  squeaker.pause()
+function pauseSqueakers() {
+  for (let squeaker of manySqueakers) squeaker.pause();
 }
 
 function toFireworks() {
-  window.location.replace("http://www.theguineagirls.com/fireworks.html")
+  window.location.replace('http://www.theguineagirls.com/fireworks.html');
 }
+
+const joke = document.querySelector('#joke');
+const jokeButton = document.querySelector('#jokegenerator');
+
+const getJoke = async () => {
+  const config = { headers: { Accept: 'application/json' } };
+  const res = await axios.get('https://icanhazdadjoke.com/', config);
+  return res.data.joke;
+};
+
+const addNewJoke = async () => {
+  const jokeText = await getJoke();
+  joke.innerText = jokeText;
+
+};
+
+jokeButton.addEventListener('click', addNewJoke);

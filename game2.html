@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
     <title>The Guinea Girls | Game</title>
   </head>
 
@@ -43,86 +44,62 @@
       <div class="container my-3" id="game-grid-container">
         <h1 class="display-2 text-center mb-4">Match the girls!</h1>
         <div class="row">
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
           </div>
-          <div
-            class="col-lg-3 col-4 d-flex justify-content-center mb-3"
-          >
+          <div class="col-lg-3 col-4 d-flex justify-content-center mb-3">
             <button class="paw-tile">
               <div class="tile"></div>
             </button>
@@ -131,6 +108,14 @@
             <a href="game2.html" id="reset-game" class="btn btn-primary"
               >Reset</a
             >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center flex-column w-100">
+            <h1 class="display-2">Joke Generator!</h1>
+            <h1 class="display-4">Click below for a joke....</h1>
+            <button class="btn btn-lg btn-primary" id="jokegenerator">Click me!</button>
+            <p id="joke" class="lead mt-3 text-dark"></p>
           </div>
         </div>
       </div>
