@@ -142,7 +142,7 @@ function pauseSqueakers() {
 }
 
 function toFireworks() {
-  window.location.replace('http://www.theguineagirls.com/fireworks.html');
+  window.location.replace('http://www.theguineagirls.co.uk/fireworks.html');
 }
 
 const joke = document.querySelector('#joke');
