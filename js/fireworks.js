@@ -586,6 +586,6 @@ function pauseSqueakers() {
 
 
 function backToGame() {
-  window.location.replace("http://www.theguineagirls.com/game2.html")
+  window.location.replace("http://www.theguineagirls.co.uk/game2.html")
 }
 
